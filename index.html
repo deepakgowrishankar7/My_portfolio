@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'c' || event.key === 'C' || event.key === 'u' || event.key === 'U')) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </head>
 <body>
     <section class="hero">
@@ -20,8 +29,9 @@
             </ul>
         </nav>
         <div class="hero-content">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
             <h1><span class="highlight">Enduri Depak Gowri Shankar</span></h1>
-            <h2>3rd Year Computer Science Student at SIR CR Reddy College of Engineering</h2>
+            <h2 id="typing-headline"></h2>
             <p>
                 Passionate about learning programming languages, web development, and data analysis.<br>
                 Building skills in Python, Java, web technologies, and exploring the exciting world of AI.
@@ -29,6 +39,7 @@
             <div class="hero-buttons">
                 <a href="#projects" class="primary-btn">View My Projects</a>
                 <a href="#contact" class="secondary-btn">Contact Me</a>
+                <a href="resume.pdf" class="secondary-btn" download>Download Resume</a>
             </div>
             <div class="hero-icons">
                 <a href="https://github.com/deepakgowrishankar7" target="_blank" aria-label="GitHub" class="hero-icon-link">
@@ -167,7 +178,7 @@
                         <span>CSS</span>
                         <span>GitHub Copilot</span>
                     </div>
-                    <button class="project-btn">View Project</button>
+                    <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-btn">View Project</a>
                 </div>
             </div>
             <div class="project-card">
@@ -177,13 +188,13 @@
                         <h3>Calculation Application</h3>
                         <span class="project-badge learning">Learning Project</span>
                     </div>
-                    <p>One of my first python projects - a functional calculator with basic arithmetic operations. Helped me understand DOM manipulation and event handling.</p>
+                    <p>A web-based calculator application built with Python and Flask framework. Features a clean interface for basic arithmetic operations, demonstrates Python backend development with Flask routing and request handling.</p>
                     <div class="project-tags">
-                        <span>python</span>
-                        <!-- <span>JavaScript</span>
-                        <span>CSS</span> -->
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Web Development</span>
                     </div>
-                    <button class="project-btn">View Project</button>
+                    <a href="https://calculator-3-bf9r.onrender.com" target="_blank" class="project-btn">View Project</a>
                 </div>
             </div>
             <div class="project-card">
